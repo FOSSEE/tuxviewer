@@ -43,7 +43,7 @@ function usernamePasswdforSSH() {
 	randomPasswd=$(date | md5sum | cut -c6-16) #just in case :)
 	encryptedPasswd=$(openssl passwd $randomPasswd)
 	sudo useradd -p $encryptedPasswd -r -s /bin/false $randomUser
-	echo $firstAvailablePort $randomPasswd $randomUser
+	echo $firstAvailablePort,$randomPasswd,$randomUser
 }
 
 # -------------------------------------------------------------------------

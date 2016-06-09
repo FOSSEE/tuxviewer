@@ -1,32 +1,23 @@
 README
 ======
 
-A simple server based remote desktop viewer.
+A wrapper program to share your GNU/Linux desktop over the internet with
+authentication. 
 
 Requirements
 ------------
 
-* VNC viewer and server
+Assuming `host-1` wish to share the desktop with `host-2`. 
 
-* x11vnc
+* VNC viewer (host-1)
 
-* ssh server and client
+* x11vnc     (host-2)
 
-* zenity
+* ssh server and client  (for port forwarding, on both host-1 and host-2)
 
-* web server
+* A desktop UI (for both 
 
-
-Working
--------
-
-There will be one dialog based application for both client(one who wish to
-share desktop) and techie(who will access client's machine).
-
-* Client when opens the application will be provided with an ID and password,
-  to be shared with techie.
-
-* Upon feeding the credentials techie can view the client's desktop
+* http server to manage ports (on a 3rd computer which is accessible from all hosts)
 
 
 
